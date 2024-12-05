@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>متجر العقيلي</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="bg-primary text-white text-center py-3">
+    <h1>متجر العقيلي</h1>
+    <p>أفضل المنتجات بأسعار تنافسية</p>
+  </header>
+
+  <main class="container my-5">
+    <div class="row">
+      <!-- المنتج الأول -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="منتج 1">
+          <div class="card-body text-center">
+            <h5 class="card-title">منتج 1</h5>
+            <p class="card-text">وصف مختصر للمنتج.</p>
+            <p class="text-success fw-bold">100 جنيه</p>
+            <button class="btn btn-primary add-to-cart" data-name="منتج 1" data-price="100">إضافة للسلة</button>
+          </div>
+        </div>
+      </div>
+      <!-- المنتج الثاني -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="منتج 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">منتج 2</h5>
+            <p class="card-text">وصف مختصر للمنتج.</p>
+            <p class="text-success fw-bold">150 جنيه</p>
+            <button class="btn btn-primary add-to-cart" data-name="منتج 2" data-price="150">إضافة للسلة</button>
+          </div>
+        </div>
+      </div>
+      <!-- المنتج الثالث -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="منتج 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">منتج 3</h5>
+            <p class="card-text">وصف مختصر للمنتج.</p>
+            <p class="text-success fw-bold">200 جنيه</p>
+            <button class="btn btn-primary add-to-cart" data-name="منتج 3" data-price="200">إضافة للسلة</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- السلة -->
+    <div class="cart mt-5">
+      <h2 class="text-center">سلة التسوق</h2>
+      <ul id="cart-items" class="list-group"></ul>
+      <p class="text-end fw-bold mt-3">الإجمالي: <span id="total-price">0</span> جنيه</p>
+      <button class="btn btn-success w-100" id="checkout">إتمام الشراء</button>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>© 2024 متجر العقيلي. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
